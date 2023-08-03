@@ -1,82 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MAXODERM | Science</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <style>
+      .cus-slider > .slick-arrow {
+        position: absolute;
+        bottom: -85px;
+        left: 0;
+        background: transparent;
+        color: transparent;
+        border: none;
+        outline: none;
+        height: fit-content;
+        width: 19.63px;
+        padding: 0;
+      }
+      .cus-slider > .slick-arrow::after {
+        color: #888 !important;
+        font-size: 60px;
+        font-weight: 600;
+        transition: 0.3s ease-in-out;
+      }
+      .cus-slider > .slick-arrow:hover::after {
+        color: #ff0000 !important;
+      }
+      .cus-slider > .slick-prev::after {
+        content: "\203A";
+      }
+      .cus-slider > .slick-next::after {
+        content: "\2039";
+      }
+      .cus-slider > .slick-next {
+        left: -20px;
+      }
+      .cus-slide::after{
+        position: absolute;
+        content: "";
+        width: 35px;
+        height: 35px;
+        background: url(./assets/img/qoute2.png);
+        top: -12px;
+        right: -12px;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
     <!-- header section start -->
-    <header class="bg-theme-gray py-2 position-fixed" style="top: 0; left: 0; width: 100%; z-index: 999;">
-        <!-- container start -->
-        <div class="container-xxl">
-            <nav class="navbar navbar-expand-md navbar-light">
-                <div class="container-fluid gap-xxl-5 gap-md-3">
-                  <a class="navbar-brand me-xxl-5 me-lg-3" href="./"><img src="./assets/img/logo.png" alt="Logo" style="max-width: 180px;"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4 pt-xxl-0 pt-xl-0 pt-lg-0 pt-md-0 pt-sm-4 pt-4">
-                      <li class="nav-item">
-                        <a class="nav-link active cus-nav-link fw-bold text-theme-dark" href="#" style="font-size: 16px;">Shop</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link cus-nav-link fw-bold text-theme-dark" href="./science.html" style="font-size: 16px;">Science</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link cus-nav-link fw-bold text-theme-dark" href="#" style="font-size: 16px;">Blog</a>
-                      </li>
-                    </ul>
-                    <div class="d-flex align-items-center gap-4 pt-xxl-0 pt-xl-0 pt-lg-0 pt-md-0 pt-sm-4 pt-4">
-                        <span class="text-theme-dark fw-bold" style="font-size: 16px;">Find Us ~</span>
-                        <a href="#" class="text-theme-dark hov-text-theme-primary" style="font-size: 16px;"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="text-theme-dark hov-text-theme-primary" style="font-size: 16px;"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="text-theme-dark hov-text-theme-primary" style="font-size: 16px;"><i class="bi bi-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </nav>
-        </div>
-        <!-- container end -->
+    <header
+      class="bg-theme-gray py-2 position-fixed"
+      style="top: 0; left: 0; width: 100%; z-index: 999"
+    >
+      <!-- container start -->
+      <div class="container-xxl">
+        <nav class="navbar navbar-expand-md navbar-light">
+          <div class="container-fluid gap-xxl-5 gap-md-3">
+            <a class="navbar-brand me-xxl-5 me-lg-3" href="./"
+              ><img
+                src="./assets/img/logo.png"
+                alt="Logo"
+                style="max-width: 180px"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation" style="font-size: 20px; margin: 10px 0;"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul
+                class="navbar-nav me-auto mb-2 mb-lg-0 gap-4 pt-xxl-0 pt-xl-0 pt-lg-0 pt-md-0 pt-sm-4 pt-4"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link active cus-nav-link fw-bold text-theme-dark"
+                    href="#"
+                    style="font-size: 16px"
+                    >Shop</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link cus-nav-link fw-bold text-theme-dark"
+                    href="./science.html"
+                    style="font-size: 16px"
+                    >Science</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link cus-nav-link fw-bold text-theme-dark"
+                    href="#"
+                    style="font-size: 16px"
+                    >Blog</a
+                  >
+                </li>
+              </ul>
+              <div
+                class="d-flex align-items-center gap-4 pt-xxl-0 pt-xl-0 pt-lg-0 pt-md-0 pt-sm-4 pt-4"
+              >
+                <span class="text-theme-dark fw-bold" style="font-size: 16px"
+                  >Find Us ~</span
+                >
+                <a
+                  href="#"
+                  class="text-theme-dark hov-text-theme-primary"
+                  style="font-size: 16px"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a
+                  href="#"
+                  class="text-theme-dark hov-text-theme-primary"
+                  style="font-size: 16px"
+                  ><i class="bi bi-twitter"></i
+                ></a>
+                <a
+                  href="#"
+                  class="text-theme-dark hov-text-theme-primary"
+                  style="font-size: 16px"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- container end -->
     </header>
     <!-- header section end -->
 
-
     <!-- banner section start -->
-    <section class="py-5" style="margin-top: 72px; background: radial-gradient(#ff0000be, #ff0000bc), url(./assets/img/science-banner.jpg); background-size: cover; background-repeat: no-repeat;">
-      <div class="container-xxl text-center d-flex justify-content-center align-items-center" style="height: 23rem;">
-        <h1 class="text-white text-center py-5" style="font-size: 4rem; font-weight: 600;">Our formula has continuously improved for over a decade.</h1>
+    <section
+      class="py-5"
+      style="
+        margin-top: 72px;
+        background: radial-gradient(#ff0000be, #ff0000bc),
+          url(./assets/img/science-banner.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      "
+    >
+      <div
+        class="container-xxl text-center d-flex justify-content-center align-items-center"
+        style="height: 23rem"
+      >
+        <h1
+          class="text-white text-center py-5"
+          style="font-size: 4rem; font-weight: 600"
+        >
+          Our formula has continuously improved for over a decade.
+        </h1>
       </div>
     </section>
     <!-- banner section end -->
 
-
     <!-- section 1 start -->
     <section class="py-5 my-4">
       <div class="container-xxl d-flex flex-column gap-5">
-        <div class="w-100 d-flex flex-column gap-3 align-items-center text-center">
-          <span class="text-theme-primary fs-3 fw-bold text-uppercase" style="font-family: serif;">maxoderm ingredients</span>
-          <p class="fs-2 text-theme-dark px-4" style="font-weight: 600; max-width: 65rem;">
-            Maxoderm is a <b>PATENTED</b> topical Male Enhancement formulation engineered specifically for those concerned about male virility and erection quality. It was designed to:
-            <br><br>
-            <b>Enhance sensation of penile skin and feeling of firmness Excite the areas of the skin most involved in arousal</b>
+        <div
+          class="w-100 d-flex flex-column gap-3 align-items-center text-center"
+        >
+          <span
+            class="text-theme-primary fs-3 fw-bold text-uppercase"
+            style="font-family: serif"
+            >maxoderm ingredients</span
+          >
+          <p
+            class="fs-2 text-theme-dark px-4"
+            style="font-weight: 600; max-width: 65rem"
+          >
+            Maxoderm is a <b>PATENTED</b> topical Male Enhancement formulation
+            engineered specifically for those concerned about male virility and
+            erection quality. It was designed to: <br /><br />
+            <b
+              >Enhance sensation of penile skin and feeling of firmness Excite
+              the areas of the skin most involved in arousal</b
+            >
           </p>
         </div>
         <div class="row">
-          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 position-relative px-5">
-            <img src="./assets/img/1.jpg" alt="Img" style="width: 100%;">
-            <img class="position-absolute" src="./assets/img/1-overlay.png" alt="Img" style="top: 50%; left: 50%; transform: translate(-50%, -50%); width: 70%;">
+          <div
+            class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 position-relative px-5"
+          >
+            <img src="./assets/img/1.jpg" alt="Img" style="width: 100%" />
+            <img
+              class="position-absolute"
+              src="./assets/img/1-overlay.png"
+              alt="Img"
+              style="
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 70%;
+              "
+            />
           </div>
-          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 px-5 mt-5 mt-sm-5 mt-xxl0 mt-xl-0 mt-lg-0 mt-md-0">
-            <p class="text-theme-dark fs-3" style="font-weight: 500;">
-              In a Pilot Study performed using the actual Maxoderm topical formula,  the results showed that healthy males did in fact generate a significant increased response in libido 
-              (or drive) and orgasm frequency after use of the Maxoderm formulation versus the placebo.
-              <br><br>
-              Such a result clearly demonstrates the beneficial effects Maxoderm can have on the overall sexual experience of the user.  
+          <div
+            class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 px-5 mt-5 mt-sm-5 mt-xxl0 mt-xl-0 mt-lg-0 mt-md-0"
+          >
+            <p class="text-theme-dark fs-3" style="font-weight: 500">
+              In a Pilot Study performed using the actual Maxoderm topical
+              formula, the results showed that healthy males did in fact
+              generate a significant increased response in libido (or drive) and
+              orgasm frequency after use of the Maxoderm formulation versus the
+              placebo.
+              <br /><br />
+              Such a result clearly demonstrates the beneficial effects Maxoderm
+              can have on the overall sexual experience of the user.
             </p>
           </div>
         </div>
@@ -84,22 +236,50 @@
     </section>
     <!-- section 1 end -->
 
-
     <!-- section 2 start -->
     <section class="py-5">
       <div class="container-xxl d-flex flex-column gap-4">
-        <div class="w-100 d-flex flex-column gap-4 text-center align-items-center">
-          <span class="text-theme-primary fs-3 fw-bold text-uppercase" style="font-family: serif;">maxoderm ingredients</span>
-          <h1 class="text-theme-dark text-center" style="font-size: 4rem; font-weight: 700; max-width: 45rem;">We hold Maxoderm to a higher standard</h1>
+        <div
+          class="w-100 d-flex flex-column gap-4 text-center align-items-center"
+        >
+          <span
+            class="text-theme-primary fs-3 fw-bold text-uppercase"
+            style="font-family: serif"
+            >maxoderm ingredients</span
+          >
+          <h1
+            class="text-theme-dark text-center"
+            style="font-size: 4rem; font-weight: 700; max-width: 45rem"
+          >
+            We hold Maxoderm to a higher standard
+          </h1>
           <div class="row gap-xxl-0 gap-xl-0 gap-lg-0 gap-md-0 gap-5 gap-sm-5">
-            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-0 d-flex gap-4 flex-column align-items-center text-center">
-              <img src="./assets/img/2.png" alt="Img" style="width: 100%;">
-              <p class="text-theme-dark px-4 text-center" style="font-weight: 500; font-size: 19px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus nesciunt quia, architecto totam quisquam placeat minus voluptatem delectus eius cupiditate in quidem veniam nobis qui?</p>
+            <div
+              class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-0 d-flex gap-4 flex-column align-items-center text-center"
+            >
+              <img src="./assets/img/2.png" alt="Img" style="width: 100%" />
+              <p
+                class="text-theme-dark px-4 text-center"
+                style="font-weight: 500; font-size: 19px"
+              >
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus nesciunt quia, architecto totam quisquam placeat minus
+                voluptatem delectus eius cupiditate in quidem veniam nobis qui?
+              </p>
             </div>
 
-            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-0 d-flex gap-4 flex-column align-items-center text-center">
-              <img src="./assets/img/3.png" alt="Img" style="width: 100%;">
-              <p class="text-theme-dark px-4 text-center" style="font-weight: 500; font-size: 19px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus nesciunt quia, architecto totam quisquam placeat minus voluptatem delectus eius cupiditate in quidem veniam nobis qui?</p>
+            <div
+              class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-0 d-flex gap-4 flex-column align-items-center text-center"
+            >
+              <img src="./assets/img/3.png" alt="Img" style="width: 100%" />
+              <p
+                class="text-theme-dark px-4 text-center"
+                style="font-weight: 500; font-size: 19px"
+              >
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus nesciunt quia, architecto totam quisquam placeat minus
+                voluptatem delectus eius cupiditate in quidem veniam nobis qui?
+              </p>
             </div>
           </div>
         </div>
@@ -107,64 +287,190 @@
     </section>
     <!-- section 2 end -->
 
-
     <!-- section 3 start -->
     <section class="py-5">
-      <div class="container-xxl bg-theme-gray py-5 mt-3 d-flex justify-content-center text-center position-relative">
-        <img class="position-absolute" style="width: 10%; top: 0; left: 0; transform: translate(35%, -25%);" src="./assets/img/qoute.png" alt="Image">
-        <div class="w-75 d-flex flex-column align-items-center text-center gap-3">
-          <span class="text-theme-primary fs-3 fw-bold text-uppercase" style="font-family: serif;">maxoderm ingredients</span>
-          <h2 class="text-theme-dark text-center" style="font-size: 3.5rem; font-weight: 600;">Following the latest science, we source every ingredient for the highest possible quality and efficacy.</h2>
+      <div
+        class="container-xxl bg-theme-gray py-5 mt-3 d-flex justify-content-center text-center position-relative"
+      >
+        <img
+          class="position-absolute"
+          style="width: 10%; top: 0; left: 0; transform: translate(35%, -25%)"
+          src="./assets/img/qoute.png"
+          alt="Image"
+        />
+        <div
+          class="w-75 d-flex flex-column align-items-center text-center gap-3"
+        >
+          <span
+            class="text-theme-primary fs-3 fw-bold text-uppercase"
+            style="font-family: serif"
+            >maxoderm ingredients</span
+          >
+          <h2
+            class="text-theme-dark text-center"
+            style="font-size: 3.5rem; font-weight: 600"
+          >
+            Following the latest science, we source every ingredient for the
+            highest possible quality and efficacy.
+          </h2>
         </div>
       </div>
     </section>
     <!-- section 3 end -->
 
-
     <section class="py-5">
       <div class="container-xxl">
-        <ul class="nav nav-pills mb-3 flex-nowrap w-100 d-flex justify-content-center gap-4 pb-4" id="pills-tab" role="tablist">
+        <ul
+          class="nav nav-pills mb-3 flex-nowrap w-100 d-flex justify-content-center gap-4 pb-4"
+          id="pills-tab"
+          role="tablist"
+        >
           <li class="nav-item" role="presentation">
-            <button class="nav-link tab-btn-cus active" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1" aria-selected="true">Tab-1</button>
+            <button
+              class="nav-link tab-btn-cus active"
+              id="pills-1-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-1"
+              type="button"
+              role="tab"
+              aria-controls="pills-1"
+              aria-selected="true"
+            >
+              Tab-1
+            </button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link tab-btn-cus" id="pills-2-tab" data-bs-toggle="pill" data-bs-target="#pills-2" type="button" role="tab" aria-controls="pills-2" aria-selected="false">Tab-2</button>
+            <button
+              class="nav-link tab-btn-cus"
+              id="pills-2-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-2"
+              type="button"
+              role="tab"
+              aria-controls="pills-2"
+              aria-selected="false"
+            >
+              Tab-2
+            </button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link tab-btn-cus" id="pills-3-tab" data-bs-toggle="pill" data-bs-target="#pills-3" type="button" role="tab" aria-controls="pills-3" aria-selected="false">Tab-3</button>
+            <button
+              class="nav-link tab-btn-cus"
+              id="pills-3-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-3"
+              type="button"
+              role="tab"
+              aria-controls="pills-3"
+              aria-selected="false"
+            >
+              Tab-3
+            </button>
           </li>
         </ul>
         <div class="tab-content w-100 mt-4" id="pills-tabContent">
-          <div class="tab-pane w-100 fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
+          <div
+            class="tab-pane w-100 fade show active"
+            id="pills-1"
+            role="tabpanel"
+            aria-labelledby="pills-1-tab"
+          >
             <div class="row gap-0">
-              <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 px-3 text-center">
-                <img src="./assets/img/tab-1.png" alt="Image" style="width: 100%; max-width: 400px; border-radius: 15px;">
+              <div
+                class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 px-3 text-center"
+              >
+                <img
+                  src="./assets/img/tab-1.png"
+                  alt="Image"
+                  style="width: 100%; max-width: 400px; border-radius: 15px"
+                />
               </div>
-              <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12 px-3 d-flex flex-column gap-3 text-xxl-start text-xl-start text-lg-start text-md-start text-sm-center text-center pt-xxl-0 pt-xl-0 pt-lg-0 pt-md-0 pt-sm-5 pt-5">
-                <h4 class="text-theme-dark" style="font-weight: 600; font-size: 24px;">L-Arginine</h4>
-                <p class="text-theme-dark" style="font-size: 18px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum cumque alias repudiandae vitae natus numquam illo quia incidunt molestiae. Rem, sed sequi. Possimus ab sunt, doloribus error excepturi magnam nisi autem expedita omnis minus neque sequi? Unde commodi nam maxime.</p>
+              <div
+                class="col-xxl-9 col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12 px-3 d-flex flex-column gap-3 text-xxl-start text-xl-start text-lg-start text-md-start text-sm-center text-center pt-xxl-0 pt-xl-0 pt-lg-0 pt-md-0 pt-sm-5 pt-5"
+              >
+                <h4
+                  class="text-theme-dark"
+                  style="font-weight: 600; font-size: 24px"
+                >
+                  L-Arginine
+                </h4>
+                <p class="text-theme-dark" style="font-size: 18px">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum cumque alias repudiandae vitae natus numquam illo quia
+                  incidunt molestiae. Rem, sed sequi. Possimus ab sunt,
+                  doloribus error excepturi magnam nisi autem expedita omnis
+                  minus neque sequi? Unde commodi nam maxime.
+                </p>
               </div>
             </div>
           </div>
-          <div class="tab-pane w-100 fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
+          <div
+            class="tab-pane w-100 fade"
+            id="pills-2"
+            role="tabpanel"
+            aria-labelledby="pills-2-tab"
+          >
             <div class="row gap-0">
-              <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 px-3 text-center">
-                <img src="./assets/img/tab-1.png" alt="Image" style="width: 100%; max-width: 400px; border-radius: 15px;">
+              <div
+                class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 px-3 text-center"
+              >
+                <img
+                  src="./assets/img/tab-1.png"
+                  alt="Image"
+                  style="width: 100%; max-width: 400px; border-radius: 15px"
+                />
               </div>
-              <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12 px-3 d-flex flex-column gap-3 text-xxl-start text-xl-start text-lg-start text-md-start text-sm-center text-center pt-xxl-0 pt-xl-0 pt-lg-0 pt-md-0 pt-sm-5 pt-5">
-                <h4 class="text-theme-dark" style="font-weight: 600; font-size: 24px;">L-Arginine</h4>
-                <p class="text-theme-dark" style="font-size: 18px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum cumque alias repudiandae vitae natus numquam illo quia incidunt molestiae. Rem, sed sequi. Possimus ab sunt, doloribus error excepturi magnam nisi autem expedita omnis minus neque sequi? Unde commodi nam maxime.</p>
+              <div
+                class="col-xxl-9 col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12 px-3 d-flex flex-column gap-3 text-xxl-start text-xl-start text-lg-start text-md-start text-sm-center text-center pt-xxl-0 pt-xl-0 pt-lg-0 pt-md-0 pt-sm-5 pt-5"
+              >
+                <h4
+                  class="text-theme-dark"
+                  style="font-weight: 600; font-size: 24px"
+                >
+                  L-Arginine
+                </h4>
+                <p class="text-theme-dark" style="font-size: 18px">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum cumque alias repudiandae vitae natus numquam illo quia
+                  incidunt molestiae. Rem, sed sequi. Possimus ab sunt,
+                  doloribus error excepturi magnam nisi autem expedita omnis
+                  minus neque sequi? Unde commodi nam maxime.
+                </p>
               </div>
             </div>
           </div>
-          <div class="tab-pane w-100 fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab">
+          <div
+            class="tab-pane w-100 fade"
+            id="pills-3"
+            role="tabpanel"
+            aria-labelledby="pills-3-tab"
+          >
             <div class="row gap-0">
-              <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 px-3 text-center">
-                <img src="./assets/img/tab-1.png" alt="Image" style="width: 100%; max-width: 400px; border-radius: 15px;">
+              <div
+                class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 px-3 text-center"
+              >
+                <img
+                  src="./assets/img/tab-1.png"
+                  alt="Image"
+                  style="width: 100%; max-width: 400px; border-radius: 15px"
+                />
               </div>
-              <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12 px-3 d-flex flex-column gap-3 text-xxl-start text-xl-start text-lg-start text-md-start text-sm-center text-center pt-xxl-0 pt-xl-0 pt-lg-0 pt-md-0 pt-sm-5 pt-5">
-                <h4 class="text-theme-dark" style="font-weight: 600; font-size: 24px;">L-Arginine</h4>
-                <p class="text-theme-dark" style="font-size: 18px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum cumque alias repudiandae vitae natus numquam illo quia incidunt molestiae. Rem, sed sequi. Possimus ab sunt, doloribus error excepturi magnam nisi autem expedita omnis minus neque sequi? Unde commodi nam maxime.</p>
+              <div
+                class="col-xxl-9 col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12 px-3 d-flex flex-column gap-3 text-xxl-start text-xl-start text-lg-start text-md-start text-sm-center text-center pt-xxl-0 pt-xl-0 pt-lg-0 pt-md-0 pt-sm-5 pt-5"
+              >
+                <h4
+                  class="text-theme-dark"
+                  style="font-weight: 600; font-size: 24px"
+                >
+                  L-Arginine
+                </h4>
+                <p class="text-theme-dark" style="font-size: 18px">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum cumque alias repudiandae vitae natus numquam illo quia
+                  incidunt molestiae. Rem, sed sequi. Possimus ab sunt,
+                  doloribus error excepturi magnam nisi autem expedita omnis
+                  minus neque sequi? Unde commodi nam maxime.
+                </p>
               </div>
             </div>
           </div>
@@ -172,128 +478,540 @@
       </div>
     </section>
 
-
-    <section class="my-5" style="background: radial-gradient(#ff0000be, #ff0000bc), url(./assets/img/science-banner.jpg); background-size: cover; background-repeat: no-repeat; margin-bottom: 120px !important;">
+    <section
+      class="my-5"
+      style="
+        background: radial-gradient(#ff0000be, #ff0000bc),
+          url(./assets/img/science-banner.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 120px !important;
+      "
+    >
       <div class="container-xxl d-flex">
-        <div class="d-flex flex-column" style="width: 70%; padding-top: 40px;">
-          <span class="text-white" style="font-family: serif; font-size: 20px; font-weight: 600;">Application</span>
-          <h1 class="text-white" style="font-weight: 600; font-size: 3.2rem;">What Should I Expect?</h1>
-          <p class="text-white pt-3" style="font-size: 16px;">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quas repudiandae debitis soluta nam nulla aut culpa accusantium asperiores esse, perferendis ab, placeat repellendus harum!
+        <div class="d-flex flex-column" style="width: 70%; padding-top: 40px">
+          <span
+            class="text-white"
+            style="font-family: serif; font-size: 20px; font-weight: 600"
+            >Application</span
+          >
+          <h1 class="text-white" style="font-weight: 600; font-size: 3.2rem">
+            What Should I Expect?
+          </h1>
+          <p class="text-white pt-3" style="font-size: 16px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quas
+            repudiandae debitis soluta nam nulla aut culpa accusantium
+            asperiores esse, perferendis ab, placeat repellendus harum!
           </p>
           <div class="d-flex gap-3 pt-4">
-            <img src="./assets/img/23.png" alt="Image" style="width: 100%; max-width: 460px; margin-bottom: 40px;">
+            <img
+              src="./assets/img/23.png"
+              alt="Image"
+              style="width: 100%; max-width: 460px; margin-bottom: 40px"
+            />
           </div>
         </div>
-        <div class="text-end" style="width: 30%;">
-          <img src="./assets/img/timer.png" alt="Img" style="padding: 12px; background: #ff000071; width: 100%; border-radius: 100%; transform: translateY(80px);">
+        <div class="text-end" style="width: 30%">
+          <img
+            src="./assets/img/timer.png"
+            alt="Img"
+            style="
+              padding: 12px;
+              background: #ff000071;
+              width: 100%;
+              border-radius: 100%;
+              transform: translateY(80px);
+            "
+          />
         </div>
       </div>
     </section>
 
+    <section class="py-5">
+      <div class="container-xxl">
+        <div class="row gap-0">
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 p-4 d-flex flex-column">
+            <img src="./assets/img/35.png" alt="Image" style="width: 100%;">
+          </div>
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 p-4 d-flex flex-column">
+            <span class="text-theme-primary text-uppercase" style="font-size: 22px; font-family: serif; font-weight: 600;">maxoderm power up</span>
+            <h3 class="text-theme-dark" style="font-size: 3rem; font-weight: 600;">Clean and simple, delivered</h3>
+
+            <div class="w-100 d-flex align-items-center gap-3 pt-4">
+              <img src="./assets/img/55.png" alt="Image" style="max-width: 120px;">
+              <p class="text-theme-dark" style="font-size: 18px; max-width: 250px;">Take a quarter-size
+                amount of Maxoderm
+                cream.</p>
+            </div>
+            <div class="w-100 d-flex align-items-center gap-3 pt-4">
+              <img src="./assets/img/55.png" alt="Image" style="max-width: 120px;">
+              <p class="text-theme-dark" style="font-size: 18px; max-width: 250px;">Take a quarter-size
+                amount of Maxoderm
+                cream.</p>
+            </div>
+            <div class="w-100 d-flex align-items-center gap-3 pt-4">
+              <img src="./assets/img/55.png" alt="Image" style="max-width: 120px;">
+              <p class="text-theme-dark" style="font-size: 18px; max-width: 250px;">Take a quarter-size
+                amount of Maxoderm
+                cream.</p>
+            </div>
+          </div>
+        </div>
+        <p class="w-100 px-5 mt-4 text-theme-dark" style="font-size: 18px;">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi molestiae reiciendis aperiam amet illum assumenda fugit ut porro ab libero. Incidunt dolor quidem repudiandae nemo inventore quaerat provident aspernatur architecto reprehenderit autem ut, voluptatem et quam! Cum consequuntur iste, expedita quos sunt earum. Cumque officia doloribus voluptas soluta! Similique dolorem porro unde quis ad est ratione ullam excepturi corporis et tenetur necessitatibus sint, officiis, omnis sapiente! Quas aliquid ratione eaque?
+        </p>
+      </div>
+    </section>
 
     <section class="py-5">
       <div class="container-xxl">
         <div class="row p-0 align-items-center">
-          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-4">
-            <img src="./assets/img/faq.png" alt="Img" style="width: 100%;">
+          <div
+            class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-4"
+          >
+            <img src="./assets/img/faq.png" alt="Img" style="width: 100%" />
           </div>
-          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-4">
+          <div
+            class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-4"
+          >
             <div class="accordion accordion-flush" id="accordionFlushExample">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne">
-                  <button class="accordion-button collapsed fw-bold" style="font-size: 18px;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Did you know a relaxed penis has less oxygen than any other organ?
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    style="font-size: 18px"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    Did you know a relaxed penis has less oxygen than any other
+                    organ?
                   </button>
                 </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body" style="font-size: 16px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde animi sequi placeat amet veniam ut officiis, illo voluptates molestias! Odit iste quibusdam eum repellendus ipsa similique consectetur sequi a temporibus reiciendis, laborum perspiciatis tempore laboriosam at cupiditate, inventore repellat in.</div>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body" style="font-size: 16px">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Unde animi sequi placeat amet veniam ut officiis, illo
+                    voluptates molestias! Odit iste quibusdam eum repellendus
+                    ipsa similique consectetur sequi a temporibus reiciendis,
+                    laborum perspiciatis tempore laboriosam at cupiditate,
+                    inventore repellat in.
+                  </div>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingTwo">
-                  <button class="accordion-button collapsed fw-bold" style="font-size: 18px;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    What is Topical Targeted Delivery? 
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    style="font-size: 18px"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    What is Topical Targeted Delivery?
                   </button>
                 </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body" style="font-size: 16px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, deserunt explicabo! Labore, illo pariatur alias in dolores iusto, commodi aliquid earum, molestias dicta vitae temporibus voluptates quisquam sint vel officia rerum possimus neque eaque laudantium. Sed corrupti maxime ea distinctio.</div>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body" style="font-size: 16px">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, deserunt explicabo! Labore, illo pariatur alias in
+                    dolores iusto, commodi aliquid earum, molestias dicta vitae
+                    temporibus voluptates quisquam sint vel officia rerum
+                    possimus neque eaque laudantium. Sed corrupti maxime ea
+                    distinctio.
+                  </div>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed fw-bold" style="font-size: 18px;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    style="font-size: 18px"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
                     Are There Any Side Effects?
                   </button>
                 </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body" style="font-size: 16px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure, non, molestias perspiciatis accusantium mollitia eaque voluptatem ut dolores beatae eligendi ad magni sed. Modi dignissimos unde quidem officiis facilis tempora illum, est impedit molestiae vel, neque cumque aspernatur beatae!</div>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body" style="font-size: 16px">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequuntur iure, non, molestias perspiciatis accusantium
+                    mollitia eaque voluptatem ut dolores beatae eligendi ad
+                    magni sed. Modi dignissimos unde quidem officiis facilis
+                    tempora illum, est impedit molestiae vel, neque cumque
+                    aspernatur beatae!
+                  </div>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed fw-bold" style="font-size: 18px;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    style="font-size: 18px"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFour"
+                  >
                     THE RECOMMENDED MAXODERM SYSTEM USAGE PROGRAM
                   </button>
                 </h2>
-                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body" style="font-size: 16px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure, non, molestias perspiciatis accusantium mollitia eaque voluptatem ut dolores beatae eligendi ad magni sed. Modi dignissimos unde quidem officiis facilis tempora illum, est impedit molestiae vel, neque cumque aspernatur beatae!</div>
+                <div
+                  id="flush-collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFour"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body" style="font-size: 16px">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequuntur iure, non, molestias perspiciatis accusantium
+                    mollitia eaque voluptatem ut dolores beatae eligendi ad
+                    magni sed. Modi dignissimos unde quidem officiis facilis
+                    tempora illum, est impedit molestiae vel, neque cumque
+                    aspernatur beatae!
+                  </div>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed fw-bold" style="font-size: 18px;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    style="font-size: 18px"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFive"
+                  >
                     Will I have Better Sex with Maxoderm?
                   </button>
                 </h2>
-                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body" style="font-size: 16px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure, non, molestias perspiciatis accusantium mollitia eaque voluptatem ut dolores beatae eligendi ad magni sed. Modi dignissimos unde quidem officiis facilis tempora illum, est impedit molestiae vel, neque cumque aspernatur beatae!</div>
+                <div
+                  id="flush-collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFive"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body" style="font-size: 16px">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequuntur iure, non, molestias perspiciatis accusantium
+                    mollitia eaque voluptatem ut dolores beatae eligendi ad
+                    magni sed. Modi dignissimos unde quidem officiis facilis
+                    tempora illum, est impedit molestiae vel, neque cumque
+                    aspernatur beatae!
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section> 
-
+    </section>
 
     <section class="py-5">
       <div class="container-xxl pt-4">
         <div class="row">
-          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 px-4">
-            <h2 class="text-theme-dark" style="font-size: 3rem; font-weight: 600;">Why Does Maxoderm Have a Special Scent? </h2>
-            <br><br>
-            <p class="text-theme-dark" style="font-size: 18px;">
-              <b>The majority of our customers enjoy the light, fresh, wintergreen scent of Maxoderm. It’s very important to us that our customers understand the purpose behind this special scent. </b>
-              <br><br>
-              a.	Potency. The scent in Maxoderm comes from one of the chief ingredients, Methyl Salicylate. Methyl Salicylate is one of the ingredients responsible for enhanced sensation. When we first formulated Maxoderm, over twenty-five years ago, the scent was much stronger than it is today. We’ve tested numerous formulas varying the levels of Methyl Salicylate (and in some cases replacing it), but all formulas were just too weak for production. However, we were successful in lessening the scent to a minimum without negatively affecting the potency.
-              <br><br>
-              b.	Imitators Can’t Fool Patented Formulation. Maxoderm’s formula is so unique it’s been issued a US Patent by the US Patent and Trademarking Office. Because the scent of Methyl Salicylate is so distinctive, the absence of that scent is a surefire giveaway that the lotion you’re using is an imitator and not the real deal.
-              <br><br>
-              c.	Arousal by Association. Many of our Maxoderm users have no worries over the light scent of Maxoderm. In fact, some of them feel the smell help them get aroused – especially if they’re a long time user. It’s a well-known scientific fact that smells assist in memory and when you Maxoderm is right for you – the scent alone may actually help you get more “excited”. 
+          <div
+            class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 px-4"
+          >
+            <h2
+              class="text-theme-dark"
+              style="font-size: 3rem; font-weight: 600"
+            >
+              Why Does Maxoderm Have a Special Scent?
+            </h2>
+            <br /><br />
+            <p class="text-theme-dark" style="font-size: 18px">
+              <b
+                >The majority of our customers enjoy the light, fresh,
+                wintergreen scent of Maxoderm. It’s very important to us that
+                our customers understand the purpose behind this special scent.
+              </b>
+              <br /><br />
+              a. Potency. The scent in Maxoderm comes from one of the chief
+              ingredients, Methyl Salicylate. Methyl Salicylate is one of the
+              ingredients responsible for enhanced sensation. When we first
+              formulated Maxoderm, over twenty-five years ago, the scent was
+              much stronger than it is today. We’ve tested numerous formulas
+              varying the levels of Methyl Salicylate (and in some cases
+              replacing it), but all formulas were just too weak for production.
+              However, we were successful in lessening the scent to a minimum
+              without negatively affecting the potency.
+              <br /><br />
+              b. Imitators Can’t Fool Patented Formulation. Maxoderm’s formula
+              is so unique it’s been issued a US Patent by the US Patent and
+              Trademarking Office. Because the scent of Methyl Salicylate is so
+              distinctive, the absence of that scent is a surefire giveaway that
+              the lotion you’re using is an imitator and not the real deal.
+              <br /><br />
+              c. Arousal by Association. Many of our Maxoderm users have no
+              worries over the light scent of Maxoderm. In fact, some of them
+              feel the smell help them get aroused – especially if they’re a
+              long time user. It’s a well-known scientific fact that smells
+              assist in memory and when you Maxoderm is right for you – the
+              scent alone may actually help you get more “excited”.
             </p>
           </div>
-          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 px-4">
-            <img src="./assets/img/25.png" alt="Img" style="width: 100%;">
+          <div
+            class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 px-4"
+          >
+            <img src="./assets/img/25.png" alt="Img" style="width: 100%" />
           </div>
         </div>
       </div>
     </section>
-    
+
+    <section class="py-5 bg-theme-gray">
+      <div class="container-xxl">
+        <div class="w-100 px-4 d-flex flex-column align-items-center">
+          <h3
+            class="text-theme-dark"
+            style="font-size: 3.2rem; font-weight: 600"
+          >
+            Skeptics Speak
+          </h3>
+          <p
+            class="text-theme-dark text-center"
+            style="font-size: 19px; font-weight: 500; max-width: 900px"
+          >
+            With a growing community of satisfied Maxoderm users worldwide,
+            experience the confidence and pleasure that comes from trusting us
+            with your intimate desires
+          </p>
+        </div>
+        <div class="w-100 pb-5 mb-3">
+          <div class="cus-slider position-relative">
+            <!-- slide start -->
+            <div class="p-3">
+              <div
+                class="cus-slide p-4 d-flex flex-column gap-4 shadow-sm bg-white position-relative"
+              >
+                <p class="text-theme-dark" style="font-size: 16px">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea
+                  nesciunt ipsam nisi.
+                </p>
+                <div class="d-flex gap-2 align-items-center">
+                  <img
+                    src="./assets/img/review.png"
+                    alt="Img"
+                    style="width: 60px; height: 60px; border-radius: 100%"
+                  />
+                  <div class="d-flex flex-column">
+                    <span
+                      class="text-theme-dark"
+                      style="font-size: 18px; font-weight: 500"
+                      >James</span
+                    >
+                    <span class="text-theme-primary" style="font-size: 16px"
+                      >Maxoderm User</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slide end -->
+
+            <!-- slide start -->
+            <div class="p-3">
+              <div
+                class="cus-slide p-4 d-flex flex-column gap-4 shadow-sm bg-white position-relative"
+              >
+                <p class="text-theme-dark" style="font-size: 16px">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea
+                  nesciunt ipsam nisi.
+                </p>
+                <div class="d-flex gap-2 align-items-center">
+                  <img
+                    src="./assets/img/review.png"
+                    alt="Img"
+                    style="width: 60px; height: 60px; border-radius: 100%"
+                  />
+                  <div class="d-flex flex-column">
+                    <span
+                      class="text-theme-dark"
+                      style="font-size: 18px; font-weight: 500"
+                      >James</span
+                    >
+                    <span class="text-theme-primary" style="font-size: 16px"
+                      >Maxoderm User</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slide end -->
+
+            <!-- slide start -->
+            <div class="p-3">
+              <div
+                class="cus-slide p-4 d-flex flex-column gap-4 shadow-sm bg-white position-relative"
+              >
+                <p class="text-theme-dark" style="font-size: 16px">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea
+                  nesciunt ipsam nisi.
+                </p>
+                <div class="d-flex gap-2 align-items-center">
+                  <img
+                    src="./assets/img/review.png"
+                    alt="Img"
+                    style="width: 60px; height: 60px; border-radius: 100%"
+                  />
+                  <div class="d-flex flex-column">
+                    <span
+                      class="text-theme-dark"
+                      style="font-size: 18px; font-weight: 500"
+                      >James</span
+                    >
+                    <span class="text-theme-primary" style="font-size: 16px"
+                      >Maxoderm User</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slide end -->
+
+            <!-- slide start -->
+            <div class="p-3">
+              <div
+                class="cus-slide p-4 d-flex flex-column gap-4 shadow-sm bg-white position-relative"
+              >
+                <p class="text-theme-dark" style="font-size: 16px">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea
+                  nesciunt ipsam nisi.
+                </p>
+                <div class="d-flex gap-2 align-items-center">
+                  <img
+                    src="./assets/img/review.png"
+                    alt="Img"
+                    style="width: 60px; height: 60px; border-radius: 100%"
+                  />
+                  <div class="d-flex flex-column">
+                    <span
+                      class="text-theme-dark"
+                      style="font-size: 18px; font-weight: 500"
+                      >James</span
+                    >
+                    <span class="text-theme-primary" style="font-size: 16px"
+                      >Maxoderm User</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slide end -->
+
+            <!-- slide start -->
+            <div class="p-3">
+              <div
+                class="cus-slide p-4 d-flex flex-column gap-4 shadow-sm bg-white position-relative"
+              >
+                <p class="text-theme-dark" style="font-size: 16px">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea
+                  nesciunt ipsam nisi.
+                </p>
+                <div class="d-flex gap-2 align-items-center">
+                  <img
+                    src="./assets/img/review.png"
+                    alt="Img"
+                    style="width: 60px; height: 60px; border-radius: 100%"
+                  />
+                  <div class="d-flex flex-column">
+                    <span
+                      class="text-theme-dark"
+                      style="font-size: 18px; font-weight: 500"
+                      >James</span
+                    >
+                    <span class="text-theme-primary" style="font-size: 16px"
+                      >Maxoderm User</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slide end -->
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- join now section start -->
     <section class="py-5 bg-theme-primary">
       <div class="container-xxl">
         <div class="w-100 d-flex align-items-center gap-4 join-now-wrapper">
-          <div style="flex-basis: calc(50% - 1.5rem);" class="join-now-col d-flex flex-column">
-            <span class="text-white ff-theme-primary-400 fs-2 text-uppercase">join our</span>
-            <span class="text-white ff-theme-primary-500 fs-1 text-uppercase">maxoderm club</span>
-            <p class="text-white" style="font-size: 18px; max-width: 360px;">Stay up to date on new products, special offers, tips, and stories!</p>
+          <div
+            style="flex-basis: calc(50% - 1.5rem)"
+            class="join-now-col d-flex flex-column"
+          >
+            <span class="text-white ff-theme-primary-400 fs-2 text-uppercase"
+              >join our</span
+            >
+            <span class="text-white ff-theme-primary-500 fs-1 text-uppercase"
+              >maxoderm club</span
+            >
+            <p class="text-white" style="font-size: 18px; max-width: 360px">
+              Stay up to date on new products, special offers, tips, and
+              stories!
+            </p>
           </div>
-          <div style="flex-basis: calc(50% - 1.5rem);" class="join-now-col">
-            <form class="w-100 position-relative rounded-pill" style="width: fit-content; height: fit-content; overflow: hidden;">
-              <input class="py-3 px-5 w-100" type="text" placeholder="Enter Your Email" style="outline: none; border: none; font-size: 18px; color: #222;">
-              <button type="submit" class="px-4 text-white rounded-pill" style="position: absolute; top: 0; right: 0; height: 100%; width: fit-content; cursor: pointer; border: none; outline: none; background: #FFBA00; font-size: 18px;"><b>Submit</b></button>
+          <div style="flex-basis: calc(50% - 1.5rem)" class="join-now-col">
+            <form
+              class="w-100 position-relative rounded-pill"
+              style="width: fit-content; height: fit-content; overflow: hidden"
+            >
+              <input
+                class="py-3 px-5 w-100"
+                type="text"
+                placeholder="Enter Your Email"
+                style="
+                  outline: none;
+                  border: none;
+                  font-size: 18px;
+                  color: #222;
+                "
+              />
+              <button
+                type="submit"
+                class="px-4 text-white rounded-pill"
+                style="
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  height: 100%;
+                  width: fit-content;
+                  cursor: pointer;
+                  border: none;
+                  outline: none;
+                  background: #ffba00;
+                  font-size: 18px;
+                "
+              >
+                <b>Submit</b>
+              </button>
             </form>
           </div>
         </div>
@@ -304,73 +1022,165 @@
     <!-- footer section start -->
     <footer class="bg-theme-dark pt-5">
       <div class="container-xxl py-3">
-        <div class="row" style="justify-content: space-evenly;">
+        <div class="row" style="justify-content: space-evenly">
           <!-- columns start -->
-          <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-5 col-sm-5 col-12 mt-4">
+          <div
+            class="col-xxl-3 col-xl-3 col-lg-3 col-md-5 col-sm-5 col-12 mt-4"
+          >
             <div class="w-100 d-flex flex-column gap-3">
-              <h1 style="font-size: 32px; color: white; font-weight: 700;">Logo Here</h1>
-              <p class="text-white fw-light" style="font-size: 16px;">
-                Representations regarding the efficacy and safety of Maxoderm have not been evaluated by the Food and Drug Administration
+              <h1 style="font-size: 32px; color: white; font-weight: 700">
+                Logo Here
+              </h1>
+              <p class="text-white fw-light" style="font-size: 16px">
+                Representations regarding the efficacy and safety of Maxoderm
+                have not been evaluated by the Food and Drug Administration
 
-                <br><br>
+                <br /><br />
 
-                The FDA only evaluates foods and drugs, not supplements like this product This product is not intended to diagnose, prevent, treat, or cure any disease
+                The FDA only evaluates foods and drugs, not supplements like
+                this product This product is not intended to diagnose, prevent,
+                treat, or cure any disease
               </p>
             </div>
           </div>
           <!-- columns end -->
           <!-- columns start -->
-          <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-5 col-sm-5 col-12 mt-4">
+          <div
+            class="col-xxl-3 col-xl-3 col-lg-3 col-md-5 col-sm-5 col-12 mt-4"
+          >
             <div class="w-100 d-flex justify-content-center align-items-center">
-              <img src="./assets/img/partners.png" alt="Images">
+              <img src="./assets/img/partners.png" alt="Images" />
             </div>
           </div>
           <!-- columns end -->
           <!-- columns start -->
-          <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-5 col-sm-5 col-12 mt-4">
+          <div
+            class="col-xxl-3 col-xl-3 col-lg-3 col-md-5 col-sm-5 col-12 mt-4"
+          >
             <div class="w-100 d-flex flex-column gap-3">
-              <span style="font-size: 20px; color: white; font-weight: 600;">Links</span>
+              <span style="font-size: 20px; color: white; font-weight: 600"
+                >Links</span
+              >
               <div class="d-flex flex-column gap-3">
-                <a href="#" class="text-white text-decoration-none" style="font-size: 16px;">Science</a>
-                <a href="#" class="text-white text-decoration-none" style="font-size: 16px;">Help</a>
-                <a href="#" class="text-white text-decoration-none" style="font-size: 16px;">FAQs</a>
-                <a href="#" class="text-white text-decoration-none" style="font-size: 16px;">Blog</a>
+                <a
+                  href="#"
+                  class="text-white text-decoration-none"
+                  style="font-size: 16px"
+                  >Science</a
+                >
+                <a
+                  href="#"
+                  class="text-white text-decoration-none"
+                  style="font-size: 16px"
+                  >Help</a
+                >
+                <a
+                  href="#"
+                  class="text-white text-decoration-none"
+                  style="font-size: 16px"
+                  >FAQs</a
+                >
+                <a
+                  href="#"
+                  class="text-white text-decoration-none"
+                  style="font-size: 16px"
+                  >Blog</a
+                >
               </div>
             </div>
           </div>
           <!-- columns end -->
           <!-- columns start -->
-          <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-5 col-sm-5 col-12 mt-4">
+          <div
+            class="col-xxl-3 col-xl-3 col-lg-3 col-md-5 col-sm-5 col-12 mt-4"
+          >
             <div class="w-100 d-flex flex-column gap-3">
-              <span style="font-size: 20px; color: white; font-weight: 600;">Links</span>
+              <span style="font-size: 20px; color: white; font-weight: 600"
+                >Links</span
+              >
               <div class="d-flex flex-column gap-3">
-                <a href="mailto:contact@maxodermcares.com" class="text-white text-decoration-none" style="font-size: 16px;">contact@maxodermcares.com</a>
-                <a href="tel:+1-800-418-4693" class="text-white text-decoration-none" style="font-size: 16px;">1-800-418-4693</a>
+                <a
+                  href="mailto:contact@maxodermcares.com"
+                  class="text-white text-decoration-none"
+                  style="font-size: 16px"
+                  >contact@maxodermcares.com</a
+                >
+                <a
+                  href="tel:+1-800-418-4693"
+                  class="text-white text-decoration-none"
+                  style="font-size: 16px"
+                  >1-800-418-4693</a
+                >
               </div>
             </div>
           </div>
           <!-- columns end -->
         </div>
 
-        <div class="w-100 d-flex flex-wrap align-items-end justify-content-xxl-between justify-content-xl-between justify-content-lg-between justify-content-md-center justify-content-sm-center justify-content-center gap-4 pt-5">
-          <div class="flex-grow-1 d-flex flex-column gap-3 align-items-xxl-start align-items-xl-start align-items-lg-start align-items-md-center align-items-sm-center align-items-center" style="min-width: fit-content;">
+        <div
+          class="w-100 d-flex flex-wrap align-items-end justify-content-xxl-between justify-content-xl-between justify-content-lg-between justify-content-md-center justify-content-sm-center justify-content-center gap-4 pt-5"
+        >
+          <div
+            class="flex-grow-1 d-flex flex-column gap-3 align-items-xxl-start align-items-xl-start align-items-lg-start align-items-md-center align-items-sm-center align-items-center"
+            style="min-width: fit-content"
+          >
             <div class="d-flex gap-3 align-items-center">
-              <a href="#" class="text-white text-decoration-none" style="font-size: 18px;"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="text-white text-decoration-none" style="font-size: 18px;"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="text-white text-decoration-none" style="font-size: 18px;"><i class="bi bi-instagram"></i></a>
+              <a
+                href="#"
+                class="text-white text-decoration-none"
+                style="font-size: 18px"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="#"
+                class="text-white text-decoration-none"
+                style="font-size: 18px"
+                ><i class="bi bi-twitter"></i
+              ></a>
+              <a
+                href="#"
+                class="text-white text-decoration-none"
+                style="font-size: 18px"
+                ><i class="bi bi-instagram"></i
+              ></a>
             </div>
             <ul class="d-flex gap-5 align-items-center p-0">
-              <li style="list-style: none; font-size: 16px;"><a href="#" class="text-white text-decoration-none">Shop</a></li>
-              <li style="list-style: none; font-size: 16px;"><a href="./science.html" class="text-white text-decoration-none">Science</a></li>
-              <li style="list-style: none; font-size: 16px;"><a href="#" class="text-white text-decoration-none">Blog</a></li>
+              <li style="list-style: none; font-size: 16px">
+                <a href="#" class="text-white text-decoration-none">Shop</a>
+              </li>
+              <li style="list-style: none; font-size: 16px">
+                <a href="./science.html" class="text-white text-decoration-none"
+                  >Science</a
+                >
+              </li>
+              <li style="list-style: none; font-size: 16px">
+                <a href="#" class="text-white text-decoration-none">Blog</a>
+              </li>
             </ul>
           </div>
 
-          <div class="flex-grow-1 d-flex gap-4 align-items-xxl-end align-items-xl-end align-items-lg-end align-items-md-center align-items-sm-center align-items-center" style="min-width: fit-content;">
-            <ul class="d-flex gap-5 flex-wrap align-items-center p-0 w-100 justify-content-xxl-end justify-content-xl-end justify-content-lg-end justify-content-md-center justify-content-sm-center justify-content-center">
-              <li style="list-style: none; font-size: 16px;"><a href="#" class="text-white text-decoration-none">© MAXODERM 2023. ALL RIGHTS RESE</a></li>
-              <li style="list-style: none; font-size: 16px;"><a href="#" class="text-white text-decoration-none">.TERMS OF USE</a></li>
-              <li style="list-style: none; font-size: 16px;"><a href="#" class="text-white text-decoration-none">.PRIVACY POLICY</a></li>
+          <div
+            class="flex-grow-1 d-flex gap-4 align-items-xxl-end align-items-xl-end align-items-lg-end align-items-md-center align-items-sm-center align-items-center"
+            style="min-width: fit-content"
+          >
+            <ul
+              class="d-flex gap-5 flex-wrap align-items-center p-0 w-100 justify-content-xxl-end justify-content-xl-end justify-content-lg-end justify-content-md-center justify-content-sm-center justify-content-center"
+            >
+              <li style="list-style: none; font-size: 16px">
+                <a href="#" class="text-white text-decoration-none"
+                  >© MAXODERM 2023. ALL RIGHTS RESE</a
+                >
+              </li>
+              <li style="list-style: none; font-size: 16px">
+                <a href="#" class="text-white text-decoration-none"
+                  >.TERMS OF USE</a
+                >
+              </li>
+              <li style="list-style: none; font-size: 16px">
+                <a href="#" class="text-white text-decoration-none"
+                  >.PRIVACY POLICY</a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -379,5 +1189,33 @@
     <!-- footer section end -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $(".cus-slider").slick({
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+          {
+            breakpoint: 890,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+    </script>
+  </body>
 </html>
