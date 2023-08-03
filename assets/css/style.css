@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+/* theme primary font family start */
+.ff-theme-primary-100 {
+  font-family: "Montserrat" !important;
+  font-weight: 100 !important;
+}
+.ff-theme-primary-200 {
+  font-family: "Montserrat" !important;
+  font-weight: 200 !important;
+}
+.ff-theme-primary-300 {
+  font-family: "Montserrat" !important;
+  font-weight: 300 !important;
+}
+.ff-theme-primary-400 {
+  font-family: "Montserrat" !important;
+  font-weight: 400 !important;
+}
+.ff-theme-primary-500 {
+  font-family: "Montserrat" !important;
+  font-weight: 500 !important;
+}
+.ff-theme-primary-600 {
+  font-family: "Montserrat" !important;
+  font-weight: 600 !important;
+}
+.ff-theme-primary-700 {
+  font-family: "Montserrat" !important;
+  font-weight: 700 !important;
+}
+.ff-theme-primary-800 {
+  font-family: "Montserrat" !important;
+  font-weight: 800 !important;
+}
+.ff-theme-primary-900 {
+  font-family: "Montserrat" !important;
+  font-weight: 900 !important;
+}
+/* theme primary font family end */
+
+/* theme primary font family start */
+.ff-theme-secondary-100 {
+  font-family: "Oswald" !important;
+  font-weight: 100 !important;
+}
+.ff-theme-secondary-200 {
+  font-family: "Oswald" !important;
+  font-weight: 200 !important;
+}
+.ff-theme-secondary-300 {
+  font-family: "Oswald" !important;
+  font-weight: 300 !important;
+}
+.ff-theme-secondary-400 {
+  font-family: "Oswald" !important;
+  font-weight: 400 !important;
+}
+.ff-theme-secondary-500 {
+  font-family: "Oswald" !important;
+  font-weight: 500 !important;
+}
+.ff-theme-secondary-600 {
+  font-family: "Oswald" !important;
+  font-weight: 600 !important;
+}
+.ff-theme-secondary-700 {
+  font-family: "Oswald" !important;
+  font-weight: 700 !important;
+}
+.ff-theme-secondary-800 {
+  font-family: "Oswald" !important;
+  font-weight: 800 !important;
+}
+.ff-theme-secondary-900 {
+  font-family: "Oswald" !important;
+  font-weight: 900 !important;
+}
+/* theme primary font family end */
+
+body {
+  font-family: "Montserrat";
+}
+.text-theme-dark {
+  color: #000 !important;
+}
+.bg-theme-dark {
+  background: #000 !important;
+}
+.bg-theme-primary {
+  background: #ff0000 !important;
+}
+.text-theme-primary {
+  color: #ff0000 !important;
+}
+.text-theme-secondary {
+  color: #ce1413 !important;
+}
+.bg-theme-gray {
+  background: #dfdfdf !important;
+}
+.text-theme-gray {
+  color: #dfdfdf !important;
+}
+.hov-text-theme-primary {
+  transition: 0.3s ease-in-out !important;
+}
+.hov-text-theme-primary:hover {
+  color: #ff0000 !important;
+}
+.hov-bg-theme-primary {
+  transition: 0.3s ease-in-out !important;
+}
+.hov-bg-theme-primary:hover {
+  background: #ff0000 !important;
+}
+.cus-nav-link {
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+  padding: 0;
+  font-weight: 600 !important;
+}
+.cus-nav-link.active {
+  font-weight: bold !important;
+}
+
+/* theme headings start */
+.theme-heading {
+  font-size: 4.2rem;
+  text-transform: uppercase;
+}
+/* theme headings end */
+
+.btn-theme-primary {
+  transition: 0.3s ease-in-out !important;
+  border: 2px solid transparent !important;
+  background: #ff0000 !important;
+  padding: 8px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #fff !important;
+  font-weight: bold;
+}
+.btn-theme-primary:hover,
+.btn-theme-primary:focus {
+  border: 2px solid #ff0000 !important;
+  background: transparent !important;
+  color: #ff0000 !important;
+}
+.product-btn {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+  text-decoration: none;
+  font-size: 16px;
+}
+.product-btn > span,
+.product-btn > i {
+  height: 45px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+}
+.product-btn > span {
+  background: #ff0000;
+}
+.product-btn > i {
+  background: #222;
+}
+.product {
+  padding: 5rem;
+}
+.product:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.product-discount {
+  position: relative;
+}
+.product-discount::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #ce1413;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) rotate(10deg);
+}
+.cus-col {
+  justify-content: center;
+}
+@media (max-width: 1240px) {
+  html {
+    font-size: 80%;
+  }
+}
+@media (max-width: 960px) {
+    #featured-section{
+        transform: translateY(0) !important;
+        padding-bottom: 40px;
+    }
+    .featured-wrapper{
+        flex-direction: column;
+    }
+}
+@media (max-width: 730px) {
+    .featured-cards{
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+    .featured-card{
+        flex-basis: 100% !important;
+        max-width: 600px !important;
+    }
+}
+@media (max-width: 1020px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media (max-width: 800px) {
+  html {
+    font-size: 65%;
+  }
+}
+@media (max-width: 767px) {
+  .product > .cus-col > .cus-col-child {
+    min-width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .product > .cus-col {
+    justify-content: center !important;
+  }
+  .product {
+    gap: 50px;
+  }
+}
+@media(max-width: 720px){
+    .join-now-wrapper{
+        flex-direction: column;
+    }
+    .join-now-col{
+        flex-basis: 100% !important;
+        min-width: calc(100% - 30px) !important;
+        text-align: center;
+        align-items: center;
+    }
+}
